@@ -19,7 +19,9 @@ public class LoginPage {
     
 	@FindBy (xpath= "//div[text() = 'Login '] ")
 	private WebElement login;
-    
+	
+	@FindBy (xpath= "//div[text() = 'Login '] ")
+	private WebElement PracticeForGit;
 	
 	
 	public LoginPage(WebDriver driver)
