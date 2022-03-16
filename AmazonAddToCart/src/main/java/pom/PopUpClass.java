@@ -16,15 +16,15 @@ public class PopUpClass {
 	
 	public PopUpClass(WebDriver driver)
 	{
-		PageFactory.initElements(driver, this);
-		this.driver = driver;
+	   PageFactory.initElements(driver, this);
+	   this.driver = driver;
 	}
 	
 	public void AddToCart()
 	{
 		 ArrayList<String> addr =  new ArrayList<String>(driver.getWindowHandles());
-		   driver.switchTo().window(addr.get(1));
-          AddToCart.click();
+		 driver.switchTo().window(addr.get(1));
+         AddToCart.click();
 	}
 			
 
