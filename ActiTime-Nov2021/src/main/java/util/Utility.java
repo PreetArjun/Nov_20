@@ -15,11 +15,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
-public class Utility 
-    
-   {
-	
-	
+public class Utility     
+   {		
 	public static String getDataFromExcel(String sheet , int row , int cell) throws EncryptedDocumentException, IOException	
 	{
 		String data = "";
@@ -41,9 +38,9 @@ public class Utility
 		}
 		return data;		
 			
-	}	
+}	
 	
-	public static void screenShot(WebDriver driver , String testID) throws IOException
+public static void screenShot(WebDriver driver , String testID) throws IOException
 	{
 	  String DateTime = new SimpleDateFormat( "").format(new Date());
 	   File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

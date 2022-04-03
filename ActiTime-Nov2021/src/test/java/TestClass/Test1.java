@@ -65,8 +65,6 @@ public class Test1 extends Browser{
 		loginpage  = new LoginPage(driver);
 		applicationHeaderPage = new ApplicationHeaderPage(driver);
 		createTask = new CreateTask(driver);
-
-
 	}
 	
 	@BeforeMethod
@@ -80,27 +78,21 @@ public class Test1 extends Browser{
 		String password = Utility.getDataFromExcel("Sheet1", 1, 1);
 		loginpage.sendPassword(password);
 		loginpage.clickOnkeepMeLogin();
-        Thread.sleep(2000);
-        
-		
+        Thread.sleep(2000);   		
 	}
 	
 	@Test
 	public void verifyUserTab()
 	{
 		testID ="1101";
-		System.out.println(" verifyUserTab");
-		
+		System.out.println(" verifyUserTab");		
 		applicationHeaderPage.openusersTab();
 		String url = driver.getCurrentUrl();
 		String title = driver.getTitle();
 		SoftAssert soft = new SoftAssert();
 		soft.assertEquals(url, "http://localhost/administration/userlist.do");
 		soft.assertEquals(title, "actiTIME - User List", "User Tab Title is wrong");
-		soft.assertAll();
-		
-
-
+		soft.assertAll();	
 	}
 	
 	@Test
