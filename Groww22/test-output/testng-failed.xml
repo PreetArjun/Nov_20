@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [GrowSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testClass.TestClass1">
+        <methods>
+          <include name="logoutGroww"/>
+          <include name="createPOMObject"/>
+          <include name="verify"/>
+          <include name="launchBrowser"/>
+          <include name="launchGroww"/>
+          <include name="closeBrowser"/>
+          <include name="clearPOMObject"/>
+        </methods>
+      </class> <!-- testClass.TestClass1 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [GrowSuite] -->
