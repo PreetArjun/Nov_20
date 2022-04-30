@@ -8,13 +8,5 @@
       <class name="TestClass.Test1"/>
     </classes>
   </test> <!-- Test -->
-  
-  
-   <test  name="EdgeTest">
-  <parameter name = "browser" value = "Edge"/>
-    <classes>
-      <class name="TestClass.Test2"/>
-      <class name="TestClass.Test1"/>
-    </classes>
-  </test> <!-- Test -->
+
 </suite> <!-- FlipkartSuite -->

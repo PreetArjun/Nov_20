@@ -12,7 +12,6 @@
           <include name="clearPOMObject"/>
           <include name="AddToCartProduct"/>
           <include name="logout"/>
-          <include name="AddToCartShirt"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- TestClass.Test2 -->
@@ -24,7 +23,6 @@
           <include name="clearPOMObject"/>
           <include name="launchApllication"/>
           <include name="getCustomerNumber"/>
-          <include name="VerifyMousePad"/>
           <include name="createObjectOfPOMClasses"/>
         </methods>
       </class> <!-- TestClass.Test1 -->

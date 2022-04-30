@@ -46,18 +46,13 @@ public class CreateTask {
 	@FindBy (xpath= "//a[text()= 'Projects & Customers']")
 	private WebElement selectArchives;
 	
-   
-	
-
 	private WebDriver driver;
 	
 	public CreateTask(WebDriver driver)
 	{
 	PageFactory.initElements(driver, this);
-	this.driver = driver;
-	
-	}
-	
+	this.driver = driver;	
+	}	
 	public void createNewTask()
 	{
 		createNewTask.click();
@@ -71,47 +66,38 @@ public class CreateTask {
 	{
 		Actions act = new Actions(driver);
 	    act.moveToElement(selectAsNew).click().build().perform();
-	}
-	
+	}	
 	public void customerName()
 	{
 		customerName.click();
 		customerName.sendKeys("dvvAffssAppAAAApreetttt");
-	}
-	
+	}	
 	public void projectName()
-	{
-		
+	{		
 		projectName.sendKeys("aAAAAaAaaAAAAAAcoder");
 	}
 	public void  EnterName()
 	{
 		EnterName.sendKeys("AaAAAArjun");	
-	}
-	
+	}	
 	public void createTask()
 	{
 		createTask.click();
-	}
-	
+	}	
 	public void selectArchives() throws InterruptedException
 	{
 		Thread.sleep(2000);
-		selectArchives.click();
-		
+		selectArchives.click();		
 	}
 	public void selectallCreatedTask() throws InterruptedException
 	{
 		Thread.sleep(2000);
 		selectallCreatedTask.click();		
-	}
-	
+	}	
 	public void deleteTask() throws InterruptedException
-	{
-		
+	{	
 		deleteTask.click();
-		Thread.sleep(2000);
-	
+		Thread.sleep(2000);	
 		confirmDelete.click();
 	}
 	

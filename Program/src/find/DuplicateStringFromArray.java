@@ -5,7 +5,6 @@ public class DuplicateStringFromArray {
 		
 	
 	String a[] = {"Arjun", "is", "a", "Arjun", "Boy", "Boy"};
-	
 	for(int i =0; i<a.length; i++)
 	{	
 		
